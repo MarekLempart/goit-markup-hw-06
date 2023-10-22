@@ -527,17 +527,23 @@ img {
 
 /*Footer Styles*/
 
+.footer {
+    background-color: var(--hero_background-color);
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
 .footer-container {
     display: flex;
     align-items: baseline;
     justify-content: start;
 }
 
-.footer {
-    background-color: var(--hero_background-color);
-    padding: 100px 0;
-    margin: 0 auto;
+.logo-container {
+    max-width: 264px;
+    margin-right: 120px;
 }
+
 .footer-navigation-logo {
     color: var(--primary_brand-color);
     font-family: 'Raleway', sans-serif;
@@ -563,6 +569,11 @@ img {
     max-width: 264px;
 }
 
+.socials-container {
+    max-width: 208px;
+    margin-right: 80px;
+}
+
 .text-socials {
     color: var(--white_background-color);
     font-size: 16px;
@@ -571,15 +582,6 @@ img {
     letter-spacing: 0.02em;
     text-align: start;
     margin-bottom: 16px;
-}
-
-.logo-container {
-    max-width: 264px;
-    margin-right: 120px;
-}
-
-.socials-container {
-    max-width: 208px;
 }
 
 .list-social-media-footer {
@@ -609,6 +611,20 @@ img {
 .footer-socials-link:hover,
 .footer-socials-link:focus {
     background-color: var(--success-color);
+}
+
+.subscribe-container {
+    max-width: 453px;
+}
+
+.text-subscribe {
+    color: var(--white_background-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: start;
+    margin-bottom: 16px;
 }
 
 /*Studio Modal Window Styles*/
