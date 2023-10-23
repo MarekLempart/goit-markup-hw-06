@@ -614,7 +614,8 @@ img {
 }
 
 .subscribe-container {
-    max-width: 453px;
+    /*max-width: 455px;*/
+    flex-shrink: 0;
 }
 
 .text-subscribe {
@@ -625,6 +626,45 @@ img {
     letter-spacing: 0.02em;
     text-align: start;
     margin-bottom: 16px;
+}
+
+.mail-subscribe {
+    background-color: var(--hero_background-color);
+    color: var(--white_background-color);   
+    width: 266px;
+    height: 42px;
+    flex-shrink: 0;
+    border: 1px solid var(--white_background-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 8px 16px 8px 16px;
+    margin-right: 24px;
+}
+
+.mail-subscribe::placeholder {
+    color: var(--white_background-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.03em;     
+}
+
+.button-subscribe {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 165px;
+    background-color: var(--primary_brand-color);
+    color: var(--white_background-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 8px 24px;
+    border-radius: 4px;
 }
 
 /*Studio Modal Window Styles*/
@@ -700,4 +740,17 @@ img {
     visibility: hidden;
     opacity: 0;
     transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
+}
+
+.sub-headline-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+    color: var(--dark-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;    
 }
