@@ -311,13 +311,14 @@
             <div class="subscribe-container">
                 <p class="text-subscribe">Subscribe</p>
                 <form>
-                    <label class="label-subscribe">
+                    <label for="email" class="label-subscribe">
                         <span class="span-subscribe visually-hidden">Email</span>
-                        <input class="mail-subscribe" type="email" name="email" placeholder="E-mail" minlength="5" required />
                     </label>
+                    <input class="mail-subscribe" type="email" name="email" id="email" placeholder="E-mail" minlength="5" required />
+                    
                     <button class="button-subscribe" type="submit">Subscribe
                         <svg width="24" height="24" class="button-subscribe-icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
+                            <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
 
@@ -325,6 +326,7 @@
             </div>        
         </div>
     </footer>
+
     <div data-modal class="is-hidden modal-window">
         <div class="modal-body">
             <button data-modal-close class="modal-button" type="button">
@@ -333,7 +335,32 @@
                 </svg>
             </button>
             <h2 class="sub-headline-modal">Leave your contacts and we will call you back</h2>
-        </div>            
+        
+            <form class="forms-body">
+                <label class="label-text label-user-name" for="user-name">Name
+                    <input class="form-frame input-user-name" type="text" name="user-name" id="user-name" />
+                </label>
+                
+                <label class="label-text label-user-tel" for="user-tel">Phone
+                    <input class="form-frame input-user-tel" type="tel" name="phone-numer" id="user-tel" />
+                </label>
+                
+                <label class="label-text label-user-email" for="user-email">Email
+                    <input class="form-frame input-user-email" type="email" name="user-email" id="user-email" />
+                </label>
+                
+                <label class="label-text-area" for="comment">Comment
+                    <textarea class="text-comment" name="comment" id="comment" rows="5" placeholder="Text input"></textarea>
+                </label>
+
+                <label class="lebel-checkbox" for="privacy-policy-checkbox">
+                    <input class="checkbox-privacy-policy" type="checkbox" name="privacy-policy" id="provacy-policy-checkbox"/>
+                    I accept the terms and conditions of the Privacy Policy
+                </label>
+
+            </form>
+        </div>
+        
     </div>
     <script src="./js/modal.js"></script>
 </body>
