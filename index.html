@@ -310,18 +310,17 @@
             </div>
             <div class="subscribe-container">
                 <p class="text-subscribe">Subscribe</p>
-                <form name="Subscribe-forms">
+                <form class="subscribe-forms" name="Subscribe-forms">
                     <label for="email" class="label-subscribe">
-                        <span class="span-subscribe visually-hidden">Email</span>
-                    </label>
-                    <input class="mail-subscribe" type="email" name="email" id="email" placeholder="E-mail" minlength="5" required />
+                        <input class="mail-subscribe" type="email" name="email" id="email" placeholder="E-mail" minlength="5" required />
+                        <button class="button-subscribe" type="submit">Subscribe
+                            <svg width="24" height="24" class="button-subscribe-icon">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                        <!--<span class="span-subscribe visually-hidden">Email</span>-->
+                    </label>                    
                     
-                    <button class="button-subscribe" type="submit">Subscribe
-                        <svg width="24" height="24" class="button-subscribe-icon">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-
                 </form>
             </div>        
         </div>

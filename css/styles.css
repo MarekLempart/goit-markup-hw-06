@@ -614,7 +614,7 @@ img {
 }
 
 .subscribe-container {
-    /*max-width: 455px;*/
+    max-width: 456px;
     flex-shrink: 0;
 }
 
@@ -628,17 +628,31 @@ img {
     margin-bottom: 16px;
 }
 
+.subscribe-forms {
+    display: flex;
+    /*justify-content: center;
+    align-items: center;
+    flex-direction: row;*/
+}
+
+.label-subscribe {
+    gap: 24px;
+}
+
 .mail-subscribe {
-    background-color: var(--hero_background-color);
+    background-color: transparent;
     color: var(--white_background-color);   
-    width: 266px;
-    height: 42px;
+    width: 264px;
+    height: 40px;
     flex-shrink: 0;
     border: 1px solid var(--white_background-color);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 8px 16px 8px 16px;
+    padding-left: 16px;
     margin-right: 24px;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .mail-subscribe::placeholder {
@@ -651,13 +665,17 @@ img {
 }
 
 .button-subscribe {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    max-width: 165px;
+    min-width: 165px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
     background-color: var(--primary_brand-color);
     color: var(--white_background-color);
+    font-family: "Roboto";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -665,6 +683,10 @@ img {
     letter-spacing: 0.04em;
     padding: 8px 24px;
     border-radius: 4px;
+}
+
+.button-subscribe-icon {
+    margin-left: 16px;
 }
 
 /*Studio Modal Window Styles*/
