@@ -339,23 +339,27 @@
             <form class="forms-body" name="Order-Service-forms">
                 <fieldset class="form-group">
                     <legend class="form-group-legend visually-hidden">User data</legend>
-                    <label class="label-text label-user-name" for="user-name">Name
-                        <input class="form-frame input-user-name" type="text" name="user-name" id="user-name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Name must be two words separated by space." />
-                    </label>
-                
-                    <label class="label-text label-user-tel" for="user-tel">Phone
-                    <input class="form-frame input-user-tel" type="tel" name="phone-numer" id="user-tel" required />
-                    </label>
-                
-                    <label class="label-text label-user-email" for="user-email">Email
-                        <input class="form-frame input-user-email" type="email" name="user-email" id="user-email" required />
-                    </label>
-                
-                    <label class="label-text-area" for="comment">Comment
-                        <textarea class="text-comment" name="comment" id="comment" rows="5" placeholder="Text input" required></textarea>
-                    </label>
+                    
+                    <label class="label-text label-user-name" for="user-name">Name</label>
+                    <div class="icon-wrapper">
+                        <span class="icons-form"><svg width="18" heigth="18" class="icon-form"><use href="./images/icons.svg#icon-person"></use></svg></span>
+                        <input class="form-frame input-user-name" type="text" name="user-name" id="user-name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Name must be two words separated by space." />                    
+                    </div>
+                    <label class="label-text label-user-tel" for="user-tel">Phone</label>
+                    <div class="icon-wrapper">
+                        <span class="icons-form"><svg width="18" heigth="24" class="icon-form"><use href="./images/icons.svg#icon-phone"></use></svg></span>
+                        <input class="form-frame input-user-tel" type="tel" name="phone-numer" id="user-tel" required />                    
+                    </div>
+                    <label class="label-text label-user-email" for="user-email">Email</label>
+                    <div class="icon-wrapper">
+                        <span class="icons-form"><svg width="18" heigth="24" class="icon-form"><use href="./images/icons.svg#icon-email"></use></svg></span>
+                        <input class="form-frame input-user-email" type="email" name="user-email" id="user-email" required />                    
+                    </div>
+                    <label class="label-text-area" for="comment">Comment</label>
+                    <textarea class="text-comment" name="comment" id="comment" rows="5" placeholder="Text input" required></textarea>
+                    
                 </fieldset>
-                <!-- <form class="form-privacy-policy" name="form-checkbox-privacy-policy"> -->
+                <!--<form class="form-privacy-policy" name="form-checkbox-privacy-policy"> -->
                     <label class="label-checkbox" for="privacy-policy-checkbox">
                         <input class="checkbox-privacy-policy" type="checkbox" name="privacy-policy" id="provacy-policy-checkbox"
                             required />
