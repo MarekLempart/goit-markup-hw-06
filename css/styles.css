@@ -944,11 +944,9 @@ img {
     max-width: 360px;
 }*/
 
-.label-checkbox-group {
-    margin-bottom: 24px;
-}
-
-.checkbox-privacy-policy {}
+/*.checkbox-privacy-policy {}
+- input class="checkbox-privacy-policy visually-hidden" type="checkbox"
+name="user-privacy" id="user-privacy" - klasa wypad*/
 
 .label-checkbox {
     display: block;
@@ -980,7 +978,31 @@ img {
     fill var(--transition-duration) var(--transition-tf);
 }
 
-.label-checkbox-icon {}
+.label-checkbox-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.label-checkbox-group {
+    margin-bottom: 24px;
+}
+
+.label-checkbox-group > input [type="checkbox"] {
+    appearance: none;
+}
+
+.label-checkbox-group>input [type="checkbox"] + label > svg {
+    display: block;
+    width: 10px;
+    height: 8px;
+    background-color: #E7E9FC;
+    fill: transparent;
+}
+
+.label-checkbox-group > input[type=checkbox]:checked + label > svg {
+    fill: red;
+}
 
 .link-privacy-policy {
     color: var(--primary_brand-color);
