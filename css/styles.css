@@ -846,6 +846,7 @@ img {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    fill: currentColor;
     transition-property: fill;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-tf);
@@ -859,7 +860,7 @@ img {
     outline: transparent;
     padding-left: 38px;
     flex-shrink: 0;
-    resize: none;
+    /*resize: none;*/
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 4px;
     font-size: 16px;
@@ -875,7 +876,7 @@ img {
     border-color: var(--primary_brand-color);
 }
 
-.icon-form:focus .form-frame {
+.form-frame:focus .icon-form {
     fill: var(--primary_brand-color);
 }
 
