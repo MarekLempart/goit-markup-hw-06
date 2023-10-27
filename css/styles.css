@@ -881,6 +881,7 @@ img {
 }
 
 .form-group-area {
+    width: 360px;
     margin-bottom: 16px;
 }
 
@@ -915,8 +916,10 @@ img {
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    transition: border-color var(--transition-duration) var(--transition-tf);
-}
+    transition-property: border-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-tf);
+    }
 
 .text-comment:focus {
     border-color: var(--primary_brand-color);
@@ -942,19 +945,40 @@ img {
     max-width: 360px;
 }*/
 
+.label-checkbox-group {
+    margin-bottom: 24px;
+}
+
+.checkbox-privacy-policy {}
+
 .label-checkbox {
+    display: block;
     color: var(--subtle_text-color);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
     /*margin-left: 24px;*/
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-top: 16px;
+    margin-top: 16px;*/
+}
+
+.label-checkbox-span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition-property: background-color, bolder, fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-tf);
 }
 
 .link-privacy-policy {
