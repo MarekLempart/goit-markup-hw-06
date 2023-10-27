@@ -312,17 +312,16 @@
                 <p class="text-subscribe">Subscribe</p>
                 <form class="subscribe-forms" name="Subscribe-forms">
                     <label for="email" class="label-subscribe">
-                        <input class="mail-subscribe" type="email" name="email" id="email" placeholder="E-mail" minlength="5" required />
-                        
-                        <!--<span class="span-subscribe visually-hidden">Email</span>-->
-                    </label>                    
+                        <input class="mail-subscribe" type="email" name="email" id="email"
+                        placeholder="E-mail" minlength="5" required />
+                    </label>
                     <button class="button-subscribe" type="submit">Subscribe
                         <svg width="24" height="24" class="button-subscribe-icon">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
-            </div>        
+            </div>
         </div>
     </footer>
 
@@ -333,31 +332,31 @@
                     <use href="./images/icons.svg#icon-button-close"></use>
                 </svg>
             </button>
-            <h2 class="sub-headline-modal">Leave your contacts and we will call you back</h2>
+            <p class="text-modal">Leave your contacts and we will call you back</p>
         
             <form class="forms-body" name="Order-Service-forms">
-                <fieldset class="form-group">
-                    <legend class="form-group-legend visually-hidden">User data</legend>
-                    
+                <div class="form-group">
                     <label class="label-text label-user-name" for="user-name">Name</label>
                     <div class="icon-wrapper">
-                        <span class="icons-form"><svg width="18" height="18" class="icon-form"><use href="./images/icons.svg#icon-person"></use></svg></span>
-                        <input class="form-frame input-user-name" type="text" name="user-name" id="user-name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Name must be two words separated by space." />                    
+                        <input class="form-frame input-user-name" type="text" name="user-name" id="user-name" required
+                            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Name must be two words separated by space." />
+                        <svg width="18" height="24" class="icon-form"><use href="./images/icons.svg#icon-person"></use></svg>
                     </div>
                     <label class="label-text label-user-tel" for="user-tel">Phone</label>
                     <div class="icon-wrapper">
-                        <span class="icons-form"><svg width="18" height="24" class="icon-form"><use href="./images/icons.svg#icon-phone"></use></svg></span>
-                        <input class="form-frame input-user-tel" type="tel" name="phone-numer" id="user-tel" required />                    
+                        <input class="form-frame input-user-tel" type="tel" name="phone-numer" id="user-tel" required />
+                        <svg width="18" height="24" class="icon-form"><use href="./images/icons.svg#icon-phone"></use></svg>
                     </div>
                     <label class="label-text label-user-email" for="user-email">Email</label>
                     <div class="icon-wrapper">
-                        <span class="icons-form"><svg width="18" height="24" class="icon-form"><use href="./images/icons.svg#icon-email"></use></svg></span>
-                        <input class="form-frame input-user-email" type="email" name="user-email" id="user-email" required />                    
+                        <input class="form-frame input-user-email" type="email" name="user-email" id="user-email" required />
+                        <svg width="18" height="24" class="icon-form"><use href="./images/icons.svg#icon-email"></use></svg>
                     </div>
-                    <label class="label-text-area" for="comment">Comment</label>
-                    <textarea class="text-comment" name="comment" id="comment" rows="5" placeholder="Text input" required></textarea>
-                    
-                </fieldset>
+                    <div class="form-group-area">
+                        <label class="label-text-area" for="use-comment">Comment</label>
+                        <textarea class="text-comment" name="use-comment" id="use-comment" rows="5" placeholder="Text input" required></textarea>
+                    </div>
+                </div>
                 <!--<form class="form-privacy-policy" name="form-checkbox-privacy-policy"> -->
                     <label class="label-checkbox" for="privacy-policy-checkbox">
                         <input class="checkbox-privacy-policy" type="checkbox" name="privacy-policy" id="privacy-policy-checkbox"
