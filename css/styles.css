@@ -988,6 +988,7 @@ name="user-privacy" id="user-privacy" - klasa wypad*/
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    fill: currentColor;
     transition: background-color var(--transition-duration) var(--transition-tf),
     border var(--transition-duration) var(--transition-tf),
     fill var(--transition-duration) var(--transition-tf);
