@@ -650,7 +650,7 @@ img {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    gap: 24px;
+    /*gap: 24px;*/
 }
 
 .mail-subscribe::placeholder {
@@ -975,10 +975,12 @@ img {
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition-property: background-color, bolder, fill;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-tf);
+    transition: background-color var(--transition-duration) var(--transition-tf),
+    border var(--transition-duration) var(--transition-tf),
+    fill var(--transition-duration) var(--transition-tf);
 }
+
+.label-checkbox-icon {}
 
 .link-privacy-policy {
     color: var(--primary_brand-color);
@@ -991,8 +993,8 @@ img {
 }
 
 .send-form-button {
-    color: #FFF;
-    background-color: #4D5AE5;
+    color: var(--white_background-color);
+    background-color: var(--primary_brand-color);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -1008,7 +1010,6 @@ img {
     transition-property: background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-tf);
-    margin-top: 24px;
 }
 
 .send-form-button:hover,
