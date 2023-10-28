@@ -632,16 +632,17 @@ img {
     display: flex;
 }
 
-/*.label-subscribe {
+.label-subscribe {
+    display: flex;
     gap: 24px;
-}*/
+}
 
 .mail-subscribe {
     background-color: transparent;
     color: var(--white_background-color);   
     width: 264px;
     height: 40px;
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
     border: 1px solid var(--white_background-color);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -650,7 +651,6 @@ img {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    /*gap: 24px;*/
 }
 
 .mail-subscribe::placeholder {
