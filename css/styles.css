@@ -630,12 +630,13 @@ img {
 
 .subscribe-forms {
     display: flex;
-}
-
-.label-subscribe {
-    display: flex;
     gap: 24px;
 }
+
+/*.label-subscribe {
+    display: flex;
+    gap: 24px;
+}*/
 
 .mail-subscribe {
     display: flex;
@@ -649,7 +650,8 @@ img {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-left: 16px;
-    margin-right: 24px;
+    padding-right: 16px;
+    /*margin-right: 24px;*/
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -861,7 +863,7 @@ img {
     background-color: transparent;
     outline: transparent;
     padding-left: 38px;
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
     /*resize: none;*/
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 4px;
@@ -878,7 +880,7 @@ img {
     border-color: var(--primary_brand-color);
 }
 
-.form-frame:focus .icon-form {
+.form-frame:focus + .icon-form {
     fill: var(--primary_brand-color);
 }
 
@@ -990,7 +992,6 @@ name="user-privacy" id="user-privacy" - klasa wypad*/
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    fill: currentColor;
     transition: background-color var(--transition-duration) var(--transition-tf),
     border var(--transition-duration) var(--transition-tf),
     fill var(--transition-duration) var(--transition-tf);
